@@ -9,7 +9,7 @@
   <body>
     <h1>Journey with document object modet</h1>
     <h1 id="brands-title">Brands</h1>
-    <ul>
+    <ul class="brand-container">
       <li class="brand-name">apple</li>
       <li class="brand-name">samsung</li>
       <li class="brand-name">oppo</li>
@@ -19,9 +19,9 @@
     <script>
       const brandTile = document.getElementById("brands-title");
       brandTile.innerText = "My Brands";
-      const brandName = document.getElementsByClassName("brand-name");
-      for (const b of brandName) {
-        console.log(b.innerText);
+      const someLi = document.querySelectorAll(".brand-container li");
+      for (const li of someLi) {
+        console.log(li.innerText);
       }
     </script>
   </body>
