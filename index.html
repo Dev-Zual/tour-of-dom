@@ -8,17 +8,20 @@
   </head>
   <body>
     <h1>Journey with document object modet</h1>
+    <h1 id="brands-title">Brands</h1>
     <ul>
-      <li>apple</li>
-      <li>samsung</li>
-      <li>oppo</li>
+      <li class="brand-name">apple</li>
+      <li class="brand-name">samsung</li>
+      <li class="brand-name">oppo</li>
       <li>vivo</li>
       <li>xiaomi</li>
     </ul>
     <script>
-      const li = document.getElementsByTagName("li");
-      for (const l of li) {
-        console.log(l.innerText);
+      const brandTile = document.getElementById("brands-title");
+      brandTile.innerText = "My Brands";
+      const brandName = document.getElementsByClassName("brand-name");
+      for (const b of brandName) {
+        console.log(b.innerText);
       }
     </script>
   </body>
