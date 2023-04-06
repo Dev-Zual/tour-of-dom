@@ -8,8 +8,18 @@
   </head>
   <body>
     <h1>Journey with document object modet</h1>
+    <ul>
+      <li>apple</li>
+      <li>samsung</li>
+      <li>oppo</li>
+      <li>vivo</li>
+      <li>xiaomi</li>
+    </ul>
     <script>
-      console.log(document.body);
+      const li = document.getElementsByTagName("li");
+      for (const l of li) {
+        console.log(l.innerText);
+      }
     </script>
   </body>
 </html>
