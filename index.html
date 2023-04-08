@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Journey with document object modet</h1>
-    <h1 id="brands-title">Brands</h1>
-    <section class="container">
-      <h1>New section is here</h1>
-    </section>
-    <section id="brand">
-      <ul class="brand-container">
-        <li class="brand-name">apple</li>
-        <li class="brand-name">samsung</li>
-        <li class="brand-name">oppo</li>
-        <li>vivo</li>
-        <li>xiaomi</li>
-      </ul>
-    </section>
+    <main id="main">
+      <h1>Journey with document object modet</h1>
+      <h1 id="brands-title">Brands</h1>
+      <section class="container">
+        <h1>New section is here</h1>
+      </section>
+      <section id="brand">
+        <ul id="brand-container" class="brand-container">
+          <li class="brand-name">apple</li>
+          <li class="brand-name">samsung</li>
+          <li class="brand-name">oppo</li>
+          <li>vivo</li>
+          <li>xiaomi</li>
+        </ul>
+      </section>
+    </main>
     <script>
       const brandTile = document.getElementById("brands-title");
       brandTile.innerText = "My Brands";
@@ -34,6 +36,7 @@
       const newSection = document.getElementsByClassName("container")[0];
       newSection.innerHTML = "<ul><li>new li</li><li>new li2</li></u>";
     </script>
+    <script src="js/append.js"></script>
     <script src="js/style.js"></script>
   </body>
 </html>
